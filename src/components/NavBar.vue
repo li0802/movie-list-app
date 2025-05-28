@@ -23,16 +23,31 @@ const showSearch = () => {
 
 <style scoped>
 .navbar {
-  background-color: #333;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* 紫粉渐变 */
   color: #fff;
   padding: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'ZCOOL KuaiLe', cursive;
 }
+
 .navbar a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+  border-radius: 12px;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search {
+  cursor: pointer;
 }
 </style>
+

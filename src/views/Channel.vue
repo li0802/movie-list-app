@@ -32,6 +32,7 @@ onMounted(async () => {
 <style scoped>
 .home {
   padding: 20px;
+  background: linear-gradient(135deg, #d3cce3, #e9e4f0);
   font-family: "Helvetica", sans-serif;
 }
 .movie-grid {
