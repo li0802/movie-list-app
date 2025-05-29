@@ -1,5 +1,55 @@
-# Vue 3 + Vite
+# 电影列表应用 🎬 - 二次元奇幻之旅
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 🌟 项目简介
+欢迎来到这个超酷的电影列表应用！这是一个基于 Vue 3 和 Vite 构建的超炫项目，带你走进二次元风格的电影世界。在这里，你可以轻松浏览各类电影信息，感受电影的魅力。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 🌈 项目特色
+- **二次元风格界面**：满满的二次元元素，给你带来独特的视觉体验，仿佛置身于动漫世界中。
+- **丰富的电影信息**：详细展示电影的标题、海报、评分和详细介绍，让你对每部电影了如指掌。
+- **流畅的交互体验**：简洁易用的界面设计，让你轻松操作，享受流畅的浏览过程。
+
+## 🚀 快速开始
+### 1. 克隆项目
+```bash
+git clone https://github.com/your-repo/movie-list-app.git
+cd movie-list-app
+```
+
+### 2. 安装依赖
+```bash
+npm install
+```
+
+### 3. 启动开发服务器
+```bash
+npm run dev
+```
+启动后，在浏览器中打开 `http://127.0.0.1:5173` 即可看到应用界面啦！🎉
+
+### 4. 打包项目
+```bash
+npm run build
+```
+打包后的文件会生成在 `dist` 目录下。
+
+## 🛠 技术栈
+- **Vue 3**：流行的前端框架，提供高效的组件化开发方式。
+- **Vite**：快速的构建工具，让开发和打包过程更加高效。
+- **Axios**：用于发送 HTTP 请求，获取电影数据。
+- **Vue Router**：实现单页面应用的路由功能。
+
+
+
+## 🤝 贡献指南
+如果你对这个项目感兴趣，欢迎贡献代码！以下是一些贡献步骤：
+1. **Fork 项目**：点击项目右上角的 `Fork` 按钮，将项目复制到自己的仓库。
+2. **创建新分支**：在自己的仓库中创建一个新的分支，用于开发新功能或修复问题。
+3. **提交代码**：在新分支上进行开发，完成后提交代码到自己的仓库。
+4. **发起 Pull Request**：在自己的仓库中点击 `New pull request`，将代码合并到原项目。
+
+
+
+## 💖 感谢支持
+希望你喜欢这个电影列表应用！如果你有任何问题或建议，欢迎在 [Issues](https://github.com/your-repo/movie-list-app/issues) 中提出。
+
+让我们一起在二次元的电影世界中畅游吧！🎊
