@@ -1,9 +1,9 @@
 <!-- src/components/MovieItem.vue -->
 <template>
-  <div class="movie-item">
+  <router-link :to="`/video/${movie.id}`" class="movie-item">
     <img :src="movie.image" :alt="movie.title" class="poster" />
     <p class="title">{{ movie.title }}</p>
-  </div>
+  </router-link>
 </template>
 
 <script setup>

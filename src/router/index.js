@@ -10,7 +10,8 @@ const routes = [
   { path: '/', component: Home },
   { path: '/movie/:id', component: MovieDetail },
   { path: '/channel', component: Channel },
- { path: '/login', component: Login },
+  { path: '/login', component: Login },
+  {path: '/video/:id',name: 'VideoDetail',component: () => import('../views/VideoDetail.vue')},
   { path: '/mine', component: Mine }
 ]
 
