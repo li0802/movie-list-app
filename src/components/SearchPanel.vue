@@ -80,22 +80,24 @@ defineExpose({
 .search-panel {
   position: absolute;
   top: 60px;
-  background: #000000dc;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
   z-index: 100;
-  padding: 1rem;
-  border-bottom: 1px solid #333;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  font-family: 'ZCOOL KuaiLe', cursive;
 }
 
-/* 滑动动画 */
+/* 动画 */
 .slide-down-enter-active,
 .slide-down-leave-active {
   transition: all 0.3s ease;
 }
 .slide-down-enter-from,
 .slide-down-leave-to {
-  transform: translateY(-100%);
+  transform: translateY(-20px);
   opacity: 0;
 }
 
@@ -105,38 +107,63 @@ defineExpose({
 }
 .search-header input {
   flex: 1;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  transition: 0.2s;
 }
+.search-header input:focus {
+  border-color: #a18cd1;
+  box-shadow: 0 0 6px #a18cd1aa;
+}
+
 .search-header button {
-  margin-left: 0.5rem;
+  margin-left: 0.6rem;
   padding: 0.5rem 1rem;
-  background: #444;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
+.search-header button:hover {
+  opacity: 0.85;
+}
+
 .filters {
   margin-top: 1rem;
 }
+
 .filter-row {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
 }
+
 .tag {
-  background: #333;
-  padding: 0.4rem 0.8rem;
-  margin: 0.2rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  background: #eee;
+  color: #333;
+  padding: 0.4rem 0.9rem;
+  margin: 0.3rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
 }
+.tag:hover {
+  background: #dcd0f7;
+  border-color: #a18cd1;
+}
+
 .tag.active {
-  background: #00bcd4;
-  color: #111;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: #fff;
   font-weight: bold;
 }
 </style>
