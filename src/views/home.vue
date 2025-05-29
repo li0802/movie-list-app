@@ -10,11 +10,8 @@
 </template>
 
 <script setup>
-import axios from 'axios'
 import { ref, onMounted, onUnmounted } from 'vue'
 import MovieItem from '../components/MovieItem.vue'
-
-// 模拟从远程获取电影数据
 import { movieData } from '../assets/movies.js'
 
 const allMovies = ref([...movieData]) // 复制一份所有电影数据
@@ -42,15 +39,11 @@ const handleScroll = () => {
 onMounted(async () => {
   // 模拟 axios 请求延迟
   await new Promise(resolve => setTimeout(resolve, 500))
-  // 假设这里使用 axios 获取
-  allMovies.value = await axios.get('/api/fake-movie').then(() => movieData)
+  // 直接使用本地数据
+  allMovies.value = movieData
   loadMore() // 初始加载 5 个电影
   loading.value = false
   window.addEventListener('scroll', handleScroll)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 

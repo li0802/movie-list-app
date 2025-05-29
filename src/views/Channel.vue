@@ -10,11 +10,8 @@
 </template>
 
 <script setup>
-import axios from 'axios'
 import { ref, onMounted } from 'vue'
 import MovieItem from '../components/MovieItem-2.vue'
-
-// 模拟从远程获取电影数据
 import { movieData } from '../assets/movies.js'
 
 const movies = ref([])
@@ -23,8 +20,8 @@ const loading = ref(true)
 onMounted(async () => {
   // 模拟 axios 请求延迟
   await new Promise(resolve => setTimeout(resolve, 500))
-  // 假设这里使用 axios 获取
-  movies.value = await axios.get('/api/fake-movie').then(() => movieData)
+  // 直接使用本地数据
+  movies.value = movieData
   loading.value = false
 })
 </script>

@@ -3,6 +3,7 @@
     <router-link to="/">🎬 主页</router-link>
     <router-link to="/channel">频道</router-link>
     <router-link to="/mine">我的</router-link>
+    <a href="https://github.com/li0802/movie-list-app" target="_blank">仓库</a>
     <a class="fa fa-search search" @click="showSearch"></a>
 
     <!-- 搜索面板 -->
